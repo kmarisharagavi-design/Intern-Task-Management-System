@@ -1,0 +1,67 @@
+/* Landing Page */
+.landing-page {
+  background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.login-card h1 { margin-bottom: 15px; color: #333; }
+.login-card .tagline { margin-bottom: 25px; font-size: 16px; color: #555; }
+.login-card input, .login-card select { width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc; font-size: 14px; }
+.login-card button { width: 100%; padding: 15px; margin: 10px 0; border: none; border-radius: 10px; background-color: #007bff; color: white; font-size: 16px; cursor: pointer; }
+.login-card button:hover { background-color: #0056b3; }
+
+/* Common Dashboard */
+.dashboard-common {
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* dark gradient */
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.dashboard-common h2 { margin-bottom: 20px; color: #ff8c00; }
+.dashboard-common button.logout-btn { margin-bottom: 20px; background-color: #ff8c00; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+.dashboard-common button.logout-btn:hover { background-color: #ff6700; }
+
+.dashboard-common ul { list-style: none; padding: 0; margin: 20px 0; }
+.dashboard-common li { margin: 10px 0; display: flex; justify-content: space-between; align-items: center; background-color: rgba(255,140,0,0.2); padding: 10px 15px; border-radius: 10px; flex-wrap: wrap; }
+.dashboard-common li button { margin-left: 5px; padding: 5px 10px; border-radius: 5px; border: none; background-color: #ff8c00; color: white; cursor: pointer; }
+.dashboard-common li button:hover { background-color: #ff6700; }
+
+.history-box { background-color: rgba(0,0,0,0.2); padding: 10px; margin: 10px 0; border-radius: 10px; text-align: left; }
+
+/* Intern Message */
+.intern-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .login-card, .dashboard-common { width: 90%; padding: 30px 20px; }
+  .dashboard-common li { flex-direction: column; align-items: flex-start; }
+  .dashboard-common li button { margin-top: 5px; margin-left: 0; }
+}

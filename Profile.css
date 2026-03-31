@@ -1,0 +1,248 @@
+/* Main Container – Light Background Color */
+.profile-container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  /* LIGHT background */
+  background-color: rgb(56, 54, 54);
+
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-card {
+  background: rgb(235, 231, 231);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  display: inline-block;
+  transition: transform 0.3s;
+
+  color: black; /* Make text inside the card black */
+}
+
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Skills Section */
+.skills-section {
+  margin: 30px 0;
+}
+
+.skill {
+  margin: 15px auto;
+  text-align: left;
+  max-width: 400px;
+}
+
+.skill span {
+  font-weight: bold;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #e0e4f0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.skill-progress.react {
+  width: 90%;
+  background-color: #61dafb;
+}
+
+.skill-progress.js {
+  width: 80%;
+  background-color: #f7df1e;
+}
+
+.skill-progress.css {
+  width: 75%;
+  background-color: #264de4;
+}
+
+/* Education Section */
+.education-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.education-section h3 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.education-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.education-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 220px;
+  color: #333;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+}
+
+.education-card h4 {
+  margin: 10px 0 5px;
+}
+
+.edu-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Projects Section */
+.projects-section {
+  margin: 40px 0;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #333;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 16px rgba(0,0,0,0.25);
+}
+
+/* Contact Section */
+.contact-section {
+  margin: 40px auto;
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.contact-section h3 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ff4081;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* Send Button */
+.contact-form button {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #ff4081;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Success Message */
+.success-message {
+  margin-top: 15px;
+  color: #00b894;
+  font-weight: bold;
+}
+/* Navigation Bar */
+.profile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background-color: #eaeaf5;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.profile-nav h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.back-button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
